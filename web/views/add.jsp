@@ -11,6 +11,16 @@
     <title>Add new user</title>
 </head>
 <body>
- This is Adds User
+This is Adds User
 </body>
+<from methode="post">
+    <label>Name:
+        <input type="text" , name="name"><br/>
+    </label>
+    <label>Password:
+        <input type="text" , name="pass"><br/>
+    </label>
+    <button type="Submit">Submit</button>
+</from>
+
 </html>
