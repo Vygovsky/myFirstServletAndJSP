@@ -13,14 +13,15 @@
 <body>
 This is Adds User
 </body>
-<from methode="post">
+<form method="post">
     <label>Name:
-        <input type="text" , name="name"><br/>
+        <input type="text", name="name"><br/>
     </label>
+
     <label>Password:
-        <input type="text" , name="pass"><br/>
+        <input type="text", name="pass"><br/>
     </label>
     <button type="Submit">Submit</button>
-</from>
+</form>
 
 </html>

@@ -5,6 +5,7 @@ import app.entities.User;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Model {
     private static Model instance = new Model();
@@ -24,11 +25,12 @@ public class Model {
     }
 
     public List<String> getListUsers() {
-        String name = " ";
+       /* String name = " ";
         for (User user : model) {
             name = user.getName();
         }
         return Collections.singletonList(name);
+    }*/
+        return model.stream().map(User::getName).collect(Collectors.toList());
     }
-
 }
